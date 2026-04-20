@@ -48,3 +48,20 @@ greetuser("Alice");
 let newarray = [1,2,3,4,5];
 let squarearray = newarray.map((num) => num*num);
 console.log(squarearray);
+
+const sum = (a,b) => a+b;
+console.log(sum(10,20));
+
+const person = () => ({
+   name: "Rudraksh",
+   age: 20
+});
+console.log(person());
+
+function add(a, b) {
+   return a + b;
+}
+
+
+
+
