@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="div1">
+    <input type="text" id="name" placeholder="employee name">
+    <input type="text" id="id" placeholder="employee id">
+    <input type="number" id="salary" placeholder="employee salary">
+    <input type="text" id="dept" placeholder="employee department">
+    <br><br>
+    </div>
+    <div class="div2">
+    <button onclick="addEmploye()">addEmploye</button>
+    <button onclick="displayEmployees()">displayEmployees</button>
+    <button onclick="filterEmployees()">filterEmployees</button>
+    <button onclick="totalSalary()">totalSalary</button>
+    <button onclick="avgSalary()">avgSalary</button>
+    <button onclick="countDept()">countDept</button>
+    </div>
+
+    <div id="output"></div>
+
+    <script src="script.js" ></script>
+</body>
+</html>
