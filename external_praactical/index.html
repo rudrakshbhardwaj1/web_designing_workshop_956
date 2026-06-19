@@ -1,26 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Odd Even Checker</title>
+    <title>check odd even - external practical</title>
 </head>
+<style>
+
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+        background-color: #716060;
+    }
+    input[type="number"] {
+        padding: 10px;
+        width: 200px;
+        margin-bottom: 10px;
+    }
+    button {
+        padding: 10px 20px;
+        background-color: #157018;
+    }
+    h3 {
+        margin-top: 20px;
+    }
+</style>
 <body>
 
-    <h2>Check Odd or Even Number</h2>
-
+    <h2>check odd even - external practical</h2>
     <input type="number" id="num" placeholder="Enter a number">
     <button onclick="checkNumber()">Check</button>
-
     <h3 id="result"></h3>
-
     <script>
         function checkNumber() {
             let number = document.getElementById("num").value;
-
             if (number === "") {
                 document.getElementById("result").innerHTML = "Please enter a number";
                 return;
             }
-
             number = Number(number);
 
             if (number % 2 == 0) {
